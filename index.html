@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pokémon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <h1 class="margen-cero">Bienvenidos al Mundo Pokémon</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreNosotros.html">Nosotros</a></li>
+                <li class="dropdown">
+                    <a href="#pokemon">Pokémon</a>
+                    <ul class="dropdown-content">
+                        <li><a href="generacion1.html">Generación 1</a></li> 
+                        <li><a href="generacion2.html">Generación 2</a></li>
+                        <li><a href="generacion3.html">Generación 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-bg margen-cero text id="home">
+        <div class="grid ">
+            <div>
+                <h2 >¡Elige tu Pokémon favorito!</h2>
+            </div>
+            <div>
+                <h2> De la primer temporada </h2>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pokeball" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M3 12h6" />
+                    <path d="M15 12h6" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="text">
+        <h2 class="">Sobre Este Sitio</h2>
+        <p>Bienvenido al sitio donde puedes aprender más sobre tus Pokémon favoritos. Aquí encontrarás información, curiosidades y todo lo que necesitas saber sobre el mundo Pokémon.</p>
+    </section>
+    <!-- LISTA DE POKEMONES -->
+   <section class="imagenes pokemon centrado">
+        <div class="fondo-imagen">
+            <img clsass="padding" src="images/Squirtle.png" alt="Squirtle">
+        </div>
+        <div class="fondo-imagen">
+            <img src="images/Charmander.png" alt="Charmander">
+        </div>
+        <div class="fondo-imagen">
+            <img src="images/Bulbasaur.png" alt="Bulbasaur" >
+        </div>
+        <div class="fondo-imagen">
+            <img src="images/Pikachu.png" alt="Pikachu">
+        </div>
+    </section>
+    <!-- FORMULARIO -->
+    <section class="text">
+        <fieldset class="fieldset-bg">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna duda o quieres saber más, no dudes en contactarnos.</p>
+        <form action="#">
+            <input type="text" placeholder="Escribe tu nombre" required>
+            <input type="email" placeholder="Escribe tu correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        </fieldset>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pokémon Mundo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
