@@ -1,0 +1,90 @@
+:root{
+    --color_uno:#2c2a2a;
+    --color_dos:#efcb19;
+    --blanco:#ebe5e5;
+}
+.text{
+    text-align: center;
+    font-family:monospace;
+    font-size: 2rem;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 900;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    background-color: var(--color_uno);
+    width: min(70rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.formulario fieldset{
+    border:none;
+}
+.formulario legend{
+    font-size: xx-large;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px var(--color_uno);
+    margin: 2rem;
+}
+@media (min-width: 768px) {
+    .campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1ft);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 2.5rem;
+    }
+}
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/3;
+}
+.campo{
+margin: 2.5rem;
+}
+.campo label{
+    color: var(--blanco);
+    margin: 0.5rem;
+    display: block;
+    font-size: xx-large;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: xx-large;
+}
+.campo textarea{
+    width: 290px;
+    height: 91px;
+    font-size: larger
+}
+.boton{
+    background-color: var(--color_dos);
+    border-radius: 10%;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: large;
+    text-align: center;
+    width:100%;
+}
+@media (min-width: 768px) {
+   .boton{
+        width: auto;
+        display: grid;
+        grid-column: 1/3;
+   }
+}
+.boton:hover{
+    cursor: grab;
+}
+.boton-w100{
+    width: 100%;
+}
